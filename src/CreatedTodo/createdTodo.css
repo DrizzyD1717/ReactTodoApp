@@ -1,0 +1,123 @@
+.createdTodoLight {
+  width: 100%;
+  padding: 0.5rem;
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid black;
+}
+
+.createdTodoLight .checkTodo {
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid black;
+  outline: none;
+  margin-right: 1rem;
+  background: transparent;
+}
+
+.createdTodoLight .checkTodo:hover {
+  cursor: pointer;
+}
+
+.createdTodoLight .completedBtnTodo {
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid black;
+  outline: none;
+  margin-right: 1rem;
+  background: linear-gradient(
+    to right,
+    rgb(158, 226, 249),
+    rgb(48, 177, 224),
+    rgb(153, 48, 224)
+  );
+}
+
+.createdTodoLight .deleteBtn {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  opacity: 0;
+}
+
+.createdTodoLight:hover .deleteBtn {
+  opacity: 1;
+}
+
+.createdTodoLight .deleteBtn:hover {
+  cursor: pointer;
+}
+
+.completedTodo {
+  text-decoration: line-through;
+  color: var(--dark-blue);
+}
+
+/* Dark Mode */
+
+.createdTodoDark {
+  width: 100%;
+  padding: 0.5rem;
+  background: var(--darker-blue);
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid black;
+}
+
+.createdTodoDark p {
+  color: white;
+}
+
+.createdTodoDark .checkTodo {
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  outline: none;
+  margin-right: 1rem;
+  background: transparent;
+}
+
+.createdTodoDark .checkTodo:hover {
+  cursor: pointer;
+}
+
+.createdTodoDark .completedBtnTodo {
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid black;
+  outline: none;
+  margin-right: 1rem;
+  background: linear-gradient(
+    to right,
+    rgb(158, 226, 249),
+    rgb(48, 177, 224),
+    rgb(153, 48, 224)
+  );
+}
+
+.createdTodoDark .deleteBtn {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  opacity: 0;
+}
+
+.createdTodoDark:hover .deleteBtn {
+  color: var(--dark-blue);
+  opacity: 1;
+}
+
+.createdTodoDark .deleteBtn:hover {
+  cursor: pointer;
+}

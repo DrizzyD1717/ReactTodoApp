@@ -1,0 +1,205 @@
+:root {
+  /*LIGHT THEME*/
+  --lightest-blue: hsl(0, 0%, 98%);
+  --lighter-blue: hsl(236, 33%, 92%);
+  --light-blue: hsl(233, 11%, 84%);
+  --dark-blue: hsl(236, 9%, 61%);
+  --darker-blue: hsl(235, 19%, 35%);
+
+  /*DARK THEME*/
+  --very-dark-blue: hsl(235, 21%, 11%);
+  --very-dark-saturated-blue: hsl(235, 24%, 19%);
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-right: 1rem;
+}
+
+input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+.todoOverall {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  width: 40%;
+  z-index: 2;
+  box-shadow: 2px 2px 2px rgb(84, 83, 83);
+}
+
+.todoOverall .header {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+.todoOverall .header .logo {
+  letter-spacing: 0.4rem;
+}
+
+.todoInputLight {
+  position: relative;
+}
+
+.todoInputLight .addTodoBtn {
+  position: absolute;
+  top: 25%;
+  left: 10px;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background: transparent;
+}
+
+.todoInputLight .addTodoBtn:hover {
+  background: #000;
+  cursor: pointer;
+}
+
+.todoInputLight .newTodo {
+  display: block;
+  padding: 0.5rem 5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.bottomTodosLight {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  color: var(--very-dark-saturated-blue);
+}
+
+.bottomTodosLight .todosState button {
+  margin-right: 0.5rem;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: var(--darker-blue);
+}
+
+.bottomTodosLight .todosState button.all {
+  color: blue;
+}
+
+.bottomTodosLight .todosState button:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.bottomTodosLight .todosCompleted button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--darker-blue);
+}
+
+.bottomTodosLight .todosCompleted button:hover {
+  color: black;
+}
+
+/* 
+Dark Mode Starts Here
+just more space */
+
+.todoInputDark {
+  position: relative;
+}
+
+.todoInputDark .addTodoBtn {
+  position: absolute;
+  top: 25%;
+  left: 10px;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background: transparent;
+}
+
+.todoInputDark .addTodoBtn:hover {
+  background: white;
+  cursor: pointer;
+}
+
+.todoInputDark .newTodo {
+  display: block;
+  padding: 1rem 5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: var(--darker-blue);
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.bottomTodosDark {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: var(--darker-blue);
+  /* color: var(--darker-blue); */
+}
+
+.bottomTodosDark .todosState button {
+  margin-right: 0.5rem;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: var(--dark-blue);
+}
+
+.bottomTodosDark .todosState button.all {
+  color: blue;
+}
+
+.bottomTodosDark .todosState button:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.bottomTodosDark .todosCompleted button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--dark-blue);
+}
+
+.bottomTodosDark .todosCompleted button:hover {
+  color: black;
+}
+
+/* 
+Dark Mode ends Here
+just more space */
+
+@media (max-width: 700px) {
+  .todoOverall {
+    width: 80%;
+    left: 10%;
+  }
+
+  .bottomTodosLight .todosState {
+    display: none;
+  }
+
+  .bottomTodosDark .todosState {
+    display: none;
+  }
+}

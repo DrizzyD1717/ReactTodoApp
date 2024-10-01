@@ -1,0 +1,56 @@
+:root {
+  /*LIGHT THEME*/
+  --lightest-blue: hsl(0, 0%, 98%);
+  --lighter-blue: hsl(236, 33%, 92%);
+  --light-blue: hsl(233, 11%, 84%);
+  --dark-blue: hsl(236, 9%, 61%);
+  --darker-blue: hsl(235, 19%, 35%);
+
+  /*DARK THEME*/
+  --very-dark-blue: hsl(235, 21%, 11%);
+  --very-dark-saturated-blue: hsl(235, 24%, 19%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.overallLight {
+  min-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+
+.topLight {
+  height: 30vh;
+  width: 100%;
+  background: url(./images/bg-desktop-light.jpg);
+}
+
+.bottomLight {
+  height: 70vh;
+  width: 100%;
+}
+
+/* Dark Mode */
+
+.overallDark {
+  min-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+
+.topDark {
+  height: 30vh;
+  width: 100%;
+  background: url(./images/bg-desktop-dark.jpg);
+}
+
+.bottomDark {
+  height: 70vh;
+  width: 100%;
+  background-color: var(--very-dark-saturated-blue);
+}
